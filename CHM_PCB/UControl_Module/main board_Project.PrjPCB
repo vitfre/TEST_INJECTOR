@@ -226,23 +226,6 @@ GenerateClassCluster=0
 DocumentUniqueId=HOMKHJVF
 
 [Document12]
-DocumentPath=..\..\..\..\..\Altium\AD\Library\Kitagawa\Kitagawa Ferrite Bead.IntLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document13]
 DocumentPath=C:\Users\Public\Documents\Altium\AD15\Library\ON Semiconductor\ON Semi Interface Line Driver.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -259,7 +242,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=..\..\..\..\CHM_PCB_LIB\MC74VHCT244ADT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
