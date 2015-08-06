@@ -1,0 +1,18 @@
+*************************************************************
+FileName = main board_PCB.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Overlay
+      File : main board_PCB.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
