@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [LCD.PrjPcb]
+   Generated File[LCD-RoundHoles.TXT]
+   Generated File[LCD-SlotHoles.TXT]
+   Generated File[LCD.LDP]
+   Generated File[LCD.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 19:48:28 On 06.08.2015

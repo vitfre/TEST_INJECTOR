@@ -1,0 +1,14 @@
+*************************************************************
+FileName = LCD.GBR
+AutoAperture = True
+*************************************************************
+Generating : Keep-Out Layer
+      File : LCD.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D10
+*************************************************************
+
