@@ -259,22 +259,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HOMKHJVF
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for UControl_Module_Project\UControl_Module_PCB.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for UControl_Module_Project\UControl_Module_PCB.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for UControl_Module_Project\UControl_Module_PCB.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for UControl_Module_Project\UControl_Module_PCB.REP
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
@@ -529,7 +513,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HP LaserJet 400 M401 PCL 6
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=NC Drill
 OutputName1=NC Drill Files
