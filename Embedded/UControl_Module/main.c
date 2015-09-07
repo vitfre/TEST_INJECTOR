@@ -75,8 +75,9 @@ int main(void)
     while(1)
     {
         //TODO:: Please write your application code
-		
+		SET_OUT_1
 		Main_menu_i2c (cnt);
+		CLR_OUT_1
 		rs485_0_write (cnt);
 		uart_1_write (cnt);
 		_delay_ms(100);

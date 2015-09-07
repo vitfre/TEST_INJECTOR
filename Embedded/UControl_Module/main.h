@@ -11,10 +11,14 @@
 #define F_CPU 16000000UL // or whatever may be your frequency
 //---------------------------------------------------------------------------------------
 #include <avr/io.h>
+//---------------------------------------------------------------------------------------
+#include "inputs.h"
+#include "outputs.h"
 #include "menu\menu.h"
 #include "buart\buart_1.h"
 #include "service\buttons.h"
 #include "service\init_mcu.h"
+
 #include "rs485\rs485_0.h"
 //---------------------------------------------------------------------------------------
 #endif /* MAIN_H_ */

@@ -95,10 +95,16 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="bits_macros.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="buart\buart_1.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="buart\buart_1.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="inputs.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.c">
@@ -123,6 +129,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="menu\menu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="outputs.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="rs485\rs485_0.c">
