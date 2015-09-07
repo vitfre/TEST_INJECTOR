@@ -73,12 +73,12 @@ Discarded input sections
                 0x00000000       0xb2 menu/i2c_lcd/i2c_lcd.o
  .text          0x00000000        0x0 menu/menu.o
  .bss           0x00000000        0x0 menu/menu.o
- .text          0x00000000        0x0 rs485/buart/buart_0.o
- .bss           0x00000000        0x0 rs485/buart/buart_0.o
- .text.uart_0_rx_count
-                0x00000000        0xe rs485/buart/buart_0.o
- .text.uart_0_read
-                0x00000000       0x24 rs485/buart/buart_0.o
+ .text          0x00000000        0x0 rs485/rs485_0.o
+ .bss           0x00000000        0x0 rs485/rs485_0.o
+ .text.rs485_0_rx_count
+                0x00000000        0xe rs485/rs485_0.o
+ .text.rs485_0_read
+                0x00000000       0x24 rs485/rs485_0.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  .text.libgcc.mul
@@ -158,7 +158,7 @@ LOAD main.o
 LOAD menu/i2c_lcd/i2c/i2c.o
 LOAD menu/i2c_lcd/i2c_lcd.o
 LOAD menu/menu.o
-LOAD rs485/buart/buart_0.o
+LOAD rs485/rs485_0.o
 START GROUP
 LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libm.a
 END GROUP
@@ -425,20 +425,20 @@ END GROUP
                 0x0000074a       0x28 menu/menu.o
                 0x0000074a                Main_menu_i2c
  .text.__vector_18
-                0x00000772       0x48 rs485/buart/buart_0.o
+                0x00000772       0x48 rs485/rs485_0.o
                 0x00000772                __vector_18
  .text.__vector_19
-                0x000007ba       0x56 rs485/buart/buart_0.o
+                0x000007ba       0x56 rs485/rs485_0.o
                 0x000007ba                __vector_19
  .text.__vector_20
-                0x00000810       0x14 rs485/buart/buart_0.o
+                0x00000810       0x14 rs485/rs485_0.o
                 0x00000810                __vector_20
- .text.uart_0_write
-                0x00000824       0x24 rs485/buart/buart_0.o
-                0x00000824                uart_0_write
- .text.uart_0_init
-                0x00000848       0x12 rs485/buart/buart_0.o
-                0x00000848                uart_0_init
+ .text.rs485_0_write
+                0x00000824       0x24 rs485/rs485_0.o
+                0x00000824                rs485_0_write
+ .text.rs485_0_init
+                0x00000848       0x12 rs485/rs485_0.o
+                0x00000848                rs485_0_init
  .text.libgcc   0x0000085a        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
                 0x0000085a                __tablejump2__
                 0x0000085e                __tablejump__
@@ -481,7 +481,7 @@ END GROUP
  .data          0x00800100        0x0 menu/i2c_lcd/i2c/i2c.o
  .data          0x00800100        0x0 menu/i2c_lcd/i2c_lcd.o
  .data          0x00800100        0x0 menu/menu.o
- .data          0x00800100        0x0 rs485/buart/buart_0.o
+ .data          0x00800100        0x0 rs485/rs485_0.o
  .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
  .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
@@ -574,7 +574,7 @@ END GROUP
  .comment       0x00000000       0x31 menu/i2c_lcd/i2c/i2c.o
  .comment       0x00000000       0x31 menu/i2c_lcd/i2c_lcd.o
  .comment       0x00000000       0x31 menu/menu.o
- .comment       0x00000000       0x31 rs485/buart/buart_0.o
+ .comment       0x00000000       0x31 rs485/rs485_0.o
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -604,7 +604,7 @@ END GROUP
  .debug_aranges
                 0x000001b8       0x20 menu/menu.o
  .debug_aranges
-                0x000001d8       0x50 rs485/buart/buart_0.o
+                0x000001d8       0x50 rs485/rs485_0.o
 
 .debug_pubnames
  *(.debug_pubnames)
@@ -616,7 +616,7 @@ END GROUP
  .debug_info    0x00000639      0x724 menu/i2c_lcd/i2c/i2c.o
  .debug_info    0x00000d5d      0xd65 menu/i2c_lcd/i2c_lcd.o
  .debug_info    0x00001ac2      0x15e menu/menu.o
- .debug_info    0x00001c20      0x284 rs485/buart/buart_0.o
+ .debug_info    0x00001c20      0x284 rs485/rs485_0.o
 
 .debug_abbrev   0x00000000      0x986
  *(.debug_abbrev)
@@ -625,16 +625,16 @@ END GROUP
  .debug_abbrev  0x00000316      0x19d menu/i2c_lcd/i2c/i2c.o
  .debug_abbrev  0x000004b3      0x26a menu/i2c_lcd/i2c_lcd.o
  .debug_abbrev  0x0000071d       0xd7 menu/menu.o
- .debug_abbrev  0x000007f4      0x192 rs485/buart/buart_0.o
+ .debug_abbrev  0x000007f4      0x192 rs485/rs485_0.o
 
-.debug_line     0x00000000      0xc4e
+.debug_line     0x00000000      0xc42
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x127 buart/buart_1.o
- .debug_line    0x00000127      0x2e2 main.o
- .debug_line    0x00000409      0x2eb menu/i2c_lcd/i2c/i2c.o
- .debug_line    0x000006f4      0x33c menu/i2c_lcd/i2c_lcd.o
- .debug_line    0x00000a30       0x5d menu/menu.o
- .debug_line    0x00000a8d      0x1c1 rs485/buart/buart_0.o
+ .debug_line    0x00000127      0x2dc main.o
+ .debug_line    0x00000403      0x2eb menu/i2c_lcd/i2c/i2c.o
+ .debug_line    0x000006ee      0x33c menu/i2c_lcd/i2c_lcd.o
+ .debug_line    0x00000a2a       0x5d menu/menu.o
+ .debug_line    0x00000a87      0x1bb rs485/rs485_0.o
 
 .debug_frame    0x00000000      0x5cc
  *(.debug_frame)
@@ -643,22 +643,22 @@ END GROUP
  .debug_frame   0x000001dc       0xec menu/i2c_lcd/i2c/i2c.o
  .debug_frame   0x000002c8      0x204 menu/i2c_lcd/i2c_lcd.o
  .debug_frame   0x000004cc       0x2c menu/menu.o
- .debug_frame   0x000004f8       0xd4 rs485/buart/buart_0.o
+ .debug_frame   0x000004f8       0xd4 rs485/rs485_0.o
 
-.debug_str      0x00000000      0x5e1
+.debug_str      0x00000000      0x5df
  *(.debug_str)
  .debug_str     0x00000000      0x1c2 buart/buart_1.o
                                 0x1fb (size before relaxing)
- .debug_str     0x000001c2      0x148 main.o
-                                0x2f7 (size before relaxing)
- .debug_str     0x0000030a       0xb4 menu/i2c_lcd/i2c/i2c.o
+ .debug_str     0x000001c2      0x14a main.o
+                                0x2f9 (size before relaxing)
+ .debug_str     0x0000030c       0xb4 menu/i2c_lcd/i2c/i2c.o
                                 0x239 (size before relaxing)
- .debug_str     0x000003be      0x1b1 menu/i2c_lcd/i2c_lcd.o
+ .debug_str     0x000003c0      0x1b1 menu/i2c_lcd/i2c_lcd.o
                                 0x3ba (size before relaxing)
- .debug_str     0x0000056f       0x19 menu/menu.o
+ .debug_str     0x00000571       0x19 menu/menu.o
                                 0x1b8 (size before relaxing)
- .debug_str     0x00000588       0x59 rs485/buart/buart_0.o
-                                0x258 (size before relaxing)
+ .debug_str     0x0000058a       0x55 rs485/rs485_0.o
+                                0x256 (size before relaxing)
 
 .debug_loc      0x00000000     0x1276
  *(.debug_loc)
@@ -667,7 +667,7 @@ END GROUP
  .debug_loc     0x00000342      0x1be menu/i2c_lcd/i2c/i2c.o
  .debug_loc     0x00000500      0xb40 menu/i2c_lcd/i2c_lcd.o
  .debug_loc     0x00001040       0x4e menu/menu.o
- .debug_loc     0x0000108e      0x1e8 rs485/buart/buart_0.o
+ .debug_loc     0x0000108e      0x1e8 rs485/rs485_0.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -694,7 +694,7 @@ END GROUP
  .debug_ranges  0x00000090       0x68 menu/i2c_lcd/i2c/i2c.o
  .debug_ranges  0x000000f8       0x98 menu/i2c_lcd/i2c_lcd.o
  .debug_ranges  0x00000190       0x10 menu/menu.o
- .debug_ranges  0x000001a0       0x40 rs485/buart/buart_0.o
+ .debug_ranges  0x000001a0       0x40 rs485/rs485_0.o
 
 .debug_macro
  *(.debug_macro)

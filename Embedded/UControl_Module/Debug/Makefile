@@ -37,8 +37,7 @@ SUBDIRS :=  \
 ../menu/i2c_lcd/i2c \
 ../buart \
 ../service \
-../rs485 \
-../rs485/buart
+../rs485
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
@@ -48,7 +47,7 @@ C_SRCS +=  \
 ../menu/i2c_lcd/i2c/i2c.c \
 ../menu/i2c_lcd/i2c_lcd.c \
 ../menu/menu.c \
-../rs485/buart/buart_0.c
+../rs485/rs485_0.c
 
 
 PREPROCESSING_SRCS += 
@@ -63,7 +62,7 @@ main.o \
 menu/i2c_lcd/i2c/i2c.o \
 menu/i2c_lcd/i2c_lcd.o \
 menu/menu.o \
-rs485/buart/buart_0.o
+rs485/rs485_0.o
 
 OBJS_AS_ARGS +=  \
 buart/buart_1.o \
@@ -71,7 +70,7 @@ main.o \
 menu/i2c_lcd/i2c/i2c.o \
 menu/i2c_lcd/i2c_lcd.o \
 menu/menu.o \
-rs485/buart/buart_0.o
+rs485/rs485_0.o
 
 C_DEPS +=  \
 buart/buart_1.d \
@@ -79,7 +78,7 @@ main.d \
 menu/i2c_lcd/i2c/i2c.d \
 menu/i2c_lcd/i2c_lcd.d \
 menu/menu.d \
-rs485/buart/buart_0.d
+rs485/rs485_0.d
 
 C_DEPS_AS_ARGS +=  \
 buart/buart_1.d \
@@ -87,7 +86,7 @@ main.d \
 menu/i2c_lcd/i2c/i2c.d \
 menu/i2c_lcd/i2c_lcd.d \
 menu/menu.d \
-rs485/buart/buart_0.d
+rs485/rs485_0.d
 
 OUTPUT_FILE_PATH +=UControl_Module.elf
 
@@ -148,7 +147,7 @@ menu/%.o: ../menu/%.c
 	@echo Finished building: $<
 	
 
-rs485/buart/%.o: ../rs485/buart/%.c
+rs485/%.o: ../rs485/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 3.4.4
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -funsigned-char -funsigned-bitfields -DDEBUG  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega64a -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<"

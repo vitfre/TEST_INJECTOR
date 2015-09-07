@@ -1,11 +1,11 @@
 /*
- * buart_0.c
+ * rs485_0.c
  *
  * Created: 18.10.2013 12:43:18
  *  Author: Администратор
  */
 
-#include "buart_0.h"
+#include "rs485_0.h"
 
 //****************************************************************************************
 ISR(USART0_RX_vect)
@@ -42,12 +42,12 @@ ISR(USART0_TX_vect)
 	//TXD_DISABLE
 };
 //****************************************************************************************
-uint8_t uart_0_rx_count()
+uint8_t rs485_0_rx_count()
 {
 	return (uart_0_rxwr-uart_0_rxrd) & UART_BUFEND_0_;
 };
 //****************************************************************************************
-uint8_t uart_0_read()
+uint8_t rs485_0_read()
 {
 	uint8_t rd = uart_0_rxrd;
 	uint8_t byte;
@@ -60,7 +60,7 @@ uint8_t uart_0_read()
 	return 0;
 };
 //****************************************************************************************
-void uart_0_write(uint8_t byte)
+void rs485_0_write(uint8_t byte)
 {
 	uint8_t wr = (uart_0_txwr+1) & UART_BUFEND_0_;
 	if(wr != uart_0_txrd)
@@ -72,7 +72,7 @@ void uart_0_write(uint8_t byte)
 	};
 };
 //****************************************************************************************
-void uart_0_init()
+void rs485_0_init()
 {
 	(PORT_TXDE&=~(1<<TXDE));
 	(DDR_TXDE|=(1<<TXDE));

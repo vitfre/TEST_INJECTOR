@@ -1,5 +1,4 @@
-rs485/buart/buart_0.d rs485/buart/buart_0.o: ../rs485/buart/buart_0.c \
- ../rs485/buart/buart_0.h \
+rs485/rs485_0.d rs485/rs485_0.o: ../rs485/rs485_0.c ../rs485/rs485_0.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -16,7 +15,7 @@ rs485/buart/buart_0.d rs485/buart/buart_0.o: ../rs485/buart/buart_0.c \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\math.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\interrupt.h
 
-../rs485/buart/buart_0.h:
+../rs485/rs485_0.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\io.h:
 

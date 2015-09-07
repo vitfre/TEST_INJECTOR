@@ -17,15 +17,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   6 .debug_abbrev 00000986  00000000  00000000  00002a18  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000c4e  00000000  00000000  0000339e  2**0
+  7 .debug_line   00000c42  00000000  00000000  0000339e  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  000005cc  00000000  00000000  00003fec  2**2
+  8 .debug_frame  000005cc  00000000  00000000  00003fe0  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    000005e1  00000000  00000000  000045b8  2**0
+  9 .debug_str    000005df  00000000  00000000  000045ac  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00001276  00000000  00000000  00004b99  2**0
+ 10 .debug_loc    00001276  00000000  00000000  00004b8b  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 000001e0  00000000  00000000  00005e0f  2**0
+ 11 .debug_ranges 000001e0  00000000  00000000  00005e01  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -722,8 +722,8 @@ ISR (TIMER3_OVF_vect)
 	init_mcu();
  368:	0e 94 0c 01 	call	0x218	; 0x218 <init_mcu>
 	//---------------------------------------------------------------------------------------
-	uart_0_init();
- 36c:	0e 94 24 04 	call	0x848	; 0x848 <uart_0_init>
+	rs485_0_init();
+ 36c:	0e 94 24 04 	call	0x848	; 0x848 <rs485_0_init>
 	uart_1_init();
  370:	0e 94 cf 00 	call	0x19e	; 0x19e <uart_1_init>
 	i2c_lcd_init();
@@ -764,9 +764,9 @@ int main(void)
 		Main_menu_i2c (cnt);
  392:	8c 2f       	mov	r24, r28
  394:	0e 94 a5 03 	call	0x74a	; 0x74a <Main_menu_i2c>
-		uart_0_write (cnt);
+		rs485_0_write (cnt);
  398:	8c 2f       	mov	r24, r28
- 39a:	0e 94 12 04 	call	0x824	; 0x824 <uart_0_write>
+ 39a:	0e 94 12 04 	call	0x824	; 0x824 <rs485_0_write>
 		uart_1_write (cnt);
  39e:	8c 2f       	mov	r24, r28
  3a0:	0e 94 ba 00 	call	0x174	; 0x174 <uart_1_write>
@@ -1533,7 +1533,7 @@ void Main_menu_i2c (unsigned char data)
 
 00000772 <__vector_18>:
 
-#include "buart_0.h"
+#include "rs485_0.h"
 
 //****************************************************************************************
 ISR(USART0_RX_vect)
@@ -1663,11 +1663,11 @@ ISR(USART0_TX_vect)
  820:	1f 90       	pop	r1
  822:	18 95       	reti
 
-00000824 <uart_0_write>:
+00000824 <rs485_0_write>:
 	return 0;
 };
 //****************************************************************************************
-void uart_0_write(uint8_t byte)
+void rs485_0_write(uint8_t byte)
 {
 	uint8_t wr = (uart_0_txwr+1) & UART_BUFEND_0_;
  824:	e0 91 26 01 	lds	r30, 0x0126
@@ -1677,7 +1677,7 @@ void uart_0_write(uint8_t byte)
 	if(wr != uart_0_txrd)
  82e:	20 91 37 01 	lds	r18, 0x0137
  832:	92 17       	cp	r25, r18
- 834:	41 f0       	breq	.+16     	; 0x846 <uart_0_write+0x22>
+ 834:	41 f0       	breq	.+16     	; 0x846 <rs485_0_write+0x22>
 	{
 		uart_0_tx[uart_0_txwr] = byte;
  836:	f0 e0       	ldi	r31, 0x00	; 0
@@ -1692,11 +1692,11 @@ void uart_0_write(uint8_t byte)
  844:	55 9a       	sbi	0x0a, 5	; 10
  846:	08 95       	ret
 
-00000848 <uart_0_init>:
+00000848 <rs485_0_init>:
 	};
 };
 //****************************************************************************************
-void uart_0_init()
+void rs485_0_init()
 {
 	(PORT_TXDE&=~(1<<TXDE));
  848:	1a 98       	cbi	0x03, 2	; 3

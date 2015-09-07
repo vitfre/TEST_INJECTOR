@@ -125,10 +125,10 @@
     <Compile Include="menu\menu.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="rs485\buart\buart_0.c">
+    <Compile Include="rs485\rs485_0.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="rs485\buart\buart_0.h">
+    <Compile Include="rs485\rs485_0.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="service\buttons.h">
@@ -145,7 +145,6 @@
     <Folder Include="buart" />
     <Folder Include="service" />
     <Folder Include="rs485" />
-    <Folder Include="rs485\buart" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

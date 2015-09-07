@@ -64,7 +64,7 @@ int main(void)
 	//---------------------------------------------------------------------------------------
 	init_mcu();
 	//---------------------------------------------------------------------------------------
-	uart_0_init();
+	rs485_0_init();
 	uart_1_init();
 	i2c_lcd_init();
 	BUT_Init();
@@ -77,7 +77,7 @@ int main(void)
         //TODO:: Please write your application code
 		
 		Main_menu_i2c (cnt);
-		uart_0_write (cnt);
+		rs485_0_write (cnt);
 		uart_1_write (cnt);
 		_delay_ms(100);
 		cnt++;

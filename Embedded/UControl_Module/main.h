@@ -15,7 +15,6 @@
 #include "buart\buart_1.h"
 #include "service\buttons.h"
 #include "service\init_mcu.h"
-#include "rs485\buart\buart_0.h"
-
-
+#include "rs485\rs485_0.h"
+//---------------------------------------------------------------------------------------
 #endif /* MAIN_H_ */
