@@ -101,7 +101,9 @@ OCR1CL=0x00;
 // Clock value: 16000,000 kHz
 // Mode: Fast PWM top=0xFF
 // OC2 output: Non-Inverted PWM
-TCCR2=0x69;
+//TCCR2=0x69;
+
+TCCR2=0x00;
 TCNT2=0x00;
 OCR2=0x00;
 
