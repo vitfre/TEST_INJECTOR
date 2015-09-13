@@ -41,8 +41,8 @@
 #define THRESHOLD				5UL
 #define THRESHOLD2				50UL
 //---------------------------------------------------------------------------------------
-volatile unsigned char pressedKey = 0;
-unsigned char comp = 0;
+volatile unsigned char pressedKey;
+unsigned char comp;
 /**************************************************************************
 *   Function name : BUT_Init
 *   Returns :       нет
@@ -50,11 +50,7 @@ unsigned char comp = 0;
 *   Purpose :       инициализация портов ввода/вывода
 *                   вызывается обычно в начале main`a
 ****************************************************************************/
-void BUT_Init(void)
-{
-	DDRX_BUTTON &= ~(MASK_BUTTONS);
-	PORT_BUTTON |= MASK_BUTTONS;
-};
+void BUT_Init(void);
 /**************************************************************************
 *   Function name : BUT_Debrief
 *   Returns :       нет
@@ -63,92 +59,7 @@ void BUT_Init(void)
 *                   если кнопка нажата в течении 20 прерываний,
 *                   ее номер записывается в буфер
 ****************************************************************************/
-void BUT_Debrief(void)
-{
-	//---------------------------------------------------------------------------------------
-	unsigned char key;
-	//---------------------------------------------------------------------------------------
-	if((((PIN_BUTTON)>>(OK))&1)==0)
-	{
-		key = KEY_OK;
-	}else if ((((PIN_BUTTON)>>(UP))&1)==0)
-	{
-		key = KEY_DOWN;
-	}else if ((((PIN_BUTTON)>>(DOWN))&1)==0)
-	{
-		key = KEY_UP;
-	}else if ((((PIN_BUTTON)>>(RIGHT))&1)==0)
-	{
-		key = KEY_RIGHT;
-	}
-	else if ((((PIN_BUTTON)>>(LEFT))&1)==0)
-	{
-		key = KEY_LEFT;
-	}
-	else if ((((PIN_BUTTON)>>(KEY_ESC))&1)==0)
-	{
-		key = KEY_ESC;
-	}else
-	{
-		key = KEY_NULL;
-	};
-	//---------------------------------------------------------------------------------------
-	#ifdef norm
-		//---------------------------------------------------------------------------------------
-		//если во временной переменной что-то есть
-		if (key!=0)
-		{
-			//и если кнопка удерживается долго
-			//записать ее номер в буфер
-			if (comp == THRESHOLD)
-			{
-				comp = THRESHOLD+10;
-				pressedKey = key;
-				return;
-			}
-			else if (comp < (THRESHOLD+5))
-			{
-				comp++;
-			};
-		}
-		else
-		{
-			comp=0;
-		};
-		//---------------------------------------------------------------------------------------
-	#endif
-	#ifdef lin
-		//---------------------------------------------------------------------------------------
-		//если во временной переменной что-то есть
-		if (key!=0)
-		{
-			//и если кнопка удерживается очень долго
-			//то опять пишем ее номер в буфер
-			if (comp > THRESHOLD2)
-			{
-				comp = THRESHOLD2 - 40;
-				pressedKey = key;
-				return;
-			}
-			else
-			{
-				comp++;
-			};
-			//и если кнопка удерживается долго
-			//записать ее номер в буфер
-			if (comp == THRESHOLD)
-			{
-				pressedKey = key;
-				return;
-			};
-		}
-		else
-		{
-			comp=0;
-		};
-		//---------------------------------------------------------------------------------------
-	#endif
-};
+void BUT_Debrief(void);
 /**************************************************************************
 *   Function name : BUT_GetKey
 *   Returns :       номер нажатой кнопки
@@ -158,12 +69,7 @@ void BUT_Debrief(void)
 *                   вызывается обычно в main`e в цикле while
 *
 ****************************************************************************/
-unsigned char BUT_GetKey(void)
-{
-	unsigned char key = pressedKey;
-	pressedKey = KEY_NULL;
-	return key;
-};
+unsigned char BUT_GetKey(void);
 /**************************************************************************
 *   Function name : BUT_SetKey
 *   Returns :       нет
@@ -171,8 +77,5 @@ unsigned char BUT_GetKey(void)
 *   Purpose :       записывает в кнопочный буфер значение
 *                   требуется иногда для имитации нажатия кнопок
 ****************************************************************************/
-void BUT_SetKey(unsigned char key)
-{
-	pressedKey = key;
-};
+void BUT_SetKey(unsigned char key);
 #endif //BUTTONS_H_

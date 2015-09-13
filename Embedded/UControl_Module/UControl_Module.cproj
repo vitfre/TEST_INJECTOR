@@ -107,6 +107,12 @@
     <Compile Include="inputs.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="interrupt_handler.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="interrupt_handler.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
@@ -138,6 +144,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="rs485\rs485_0.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="service\buttons.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="service\buttons.h">
