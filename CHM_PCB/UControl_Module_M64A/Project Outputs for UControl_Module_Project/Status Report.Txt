@@ -1,9 +1,0 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [UControl_Module_Project.PrjPCB]
-
-
-Files Generated   : 0
-Documents Printed : 0
-
-Finished Output Generation At 16:40:48 On 29.08.2015
