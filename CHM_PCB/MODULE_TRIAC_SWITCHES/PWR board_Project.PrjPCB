@@ -73,35 +73,27 @@ GenerateClassCluster=0
 DocumentUniqueId=GIBKUGDR
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument3]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument4]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.GKO
 DItemRevisionGUID=
 
-[GeneratedDocument5]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument6]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for PWR board_Project\PWR board_PCB.REP
 DItemRevisionGUID=
 
 [Configuration1]
@@ -358,7 +350,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HP LaserJet 400 M401 PCL 6
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=NC Drill
 OutputName1=NC Drill Files
