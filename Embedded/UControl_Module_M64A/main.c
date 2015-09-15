@@ -55,9 +55,9 @@ int main(void)
 		
 		
 // 		Main_menu_i2c (cnt);
-// 		rs485_0_write (cnt);
+ 		rs485_0_write (cnt);
 // 		uart_1_write (cnt);
-// 		_delay_ms(100);
-// 		cnt++;
+ 		_delay_ms(100);
+ 		cnt++;
     }
 }
