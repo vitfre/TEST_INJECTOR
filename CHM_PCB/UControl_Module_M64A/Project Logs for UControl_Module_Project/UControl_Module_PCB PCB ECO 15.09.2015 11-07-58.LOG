@@ -1,0 +1,8 @@
+Change Net Name : Old Net Name=IN_9 New Net Name=IN_12
+Change Net Name : Old Net Name=IN_10 New Net Name=IN_11
+Change Net Name : Old Net Name=IN_11 New Net Name=IN_10
+Change Net Name : Old Net Name=IN_12 New Net Name=IN_9
+Change Net Name : Old Net Name=OUT_9 New Net Name=OUT_12
+Change Net Name : Old Net Name=OUT_10 New Net Name=OUT_11
+Change Net Name : Old Net Name=OUT_11 New Net Name=OUT_10
+Change Net Name : Old Net Name=OUT_12 New Net Name=OUT_9
