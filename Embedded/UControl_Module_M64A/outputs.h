@@ -29,16 +29,16 @@
 #define SET_OUT_8       (PORTC|=(1<<7));
 #define CLR_OUT_8       (PORTC&=~(1<<7));
 
-#define SET_OUT_9       (PORTD|=(1<<7));
-#define CLR_OUT_9       (PORTD&=~(1<<7));
+#define SET_OUT_9       (PORTF|=(1<<4));
+#define CLR_OUT_9       (PORTF&=~(1<<4));
 
-#define SET_OUT_10      (PORTA|=(1<<0));
-#define CLR_OUT_10      (PORTA&=~(1<<0));
+#define SET_OUT_10       (PORTD|=(1<<5));
+#define CLR_OUT_10       (PORTD&=~(1<<5));
 
-#define SET_OUT_11       (PORTD|=(1<<5));
-#define CLR_OUT_11       (PORTD&=~(1<<5));
+#define SET_OUT_11      (PORTA|=(1<<0));
+#define CLR_OUT_11      (PORTA&=~(1<<0));
 
-#define SET_OUT_12       (PORTF|=(1<<4));
-#define CLR_OUT_12       (PORTF&=~(1<<4));
+#define SET_OUT_12       (PORTD|=(1<<7));
+#define CLR_OUT_12       (PORTD&=~(1<<7));
 
 #endif /* OUTPUTS_H_ */
