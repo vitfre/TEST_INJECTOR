@@ -95,6 +95,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="adc\adc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="adc\adc.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="bits_macros.h">
       <SubType>compile</SubType>
     </Compile>
@@ -161,6 +167,7 @@
     <Folder Include="menu\i2c_lcd" />
     <Folder Include="menu\i2c_lcd\i2c" />
     <Folder Include="buart" />
+    <Folder Include="adc" />
     <Folder Include="service" />
     <Folder Include="rs485" />
   </ItemGroup>

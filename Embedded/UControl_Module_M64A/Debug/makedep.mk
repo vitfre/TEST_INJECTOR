@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+adc\adc.c
+
 buart\buart_1.c
 
 interrupt_handler.c

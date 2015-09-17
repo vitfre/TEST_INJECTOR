@@ -11,7 +11,7 @@ int main(void)
 {
 	//---------------------------------------------------------------------------------------
 	// Declare your local variables here
-	unsigned char cnt = 0;
+	unsigned int cnt = 0;
 	//---------------------------------------------------------------------------------------
 	init_mcu();
 	//---------------------------------------------------------------------------------------
@@ -53,10 +53,12 @@ int main(void)
 		SET_OUT_12
 		CLR_OUT_12
 		
-		
-// 		Main_menu_i2c (cnt);
+		cnt=read_adc(A_IN_1);
+ 		Main_menu_i2c (cnt);
+		cnt=read_adc(A_IN_2);
  		rs485_0_write (cnt);
-// 		uart_1_write (cnt);
+		cnt=read_adc(A_IN_3);
+ 		uart_1_write (cnt);
  		_delay_ms(100);
  		cnt++;
     }

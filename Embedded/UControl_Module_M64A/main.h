@@ -20,5 +20,6 @@
 #include "service\init_mcu.h"
 #include "interrupt_handler.h"
 #include "rs485\rs485_0.h"
+#include "adc/adc.h"
 //---------------------------------------------------------------------------------------
 #endif /* MAIN_H_ */
