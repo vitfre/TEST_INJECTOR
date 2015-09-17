@@ -11,7 +11,7 @@
 char const _BURN_OK_[]			PROGMEM = "  Hello  world  ";
 
 //****************************************************************************************
-void Main_menu_i2c (unsigned char data)
+void Main_menu_i2c (unsigned int data)
 {
 	set_i2c_lcd_position(1,1);
 	send_i2c_lcd_string_P(_BURN_OK_);

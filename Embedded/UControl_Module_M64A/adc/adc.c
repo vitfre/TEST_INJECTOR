@@ -7,6 +7,21 @@
 
 #include "adc.h"
 
+
+/**************************************************************************
+*   Function name : init_adc
+*   Returns :       
+*   Parameters :    
+*   Purpose :       Ініціалізаціяу АЦП
+****************************************************************************/
+void init_adc(void)
+{
+	// ADC initialization
+	// ADC Clock frequency: 500,000 kHz
+	// ADC Voltage Reference: AREF pin
+	ADMUX=ADC_VREF_TYPE & 0xff;
+	ADCSRA=0x85;
+};
 /**************************************************************************
 *   Function name : read_adc
 *   Returns :       Результати оцифровки
