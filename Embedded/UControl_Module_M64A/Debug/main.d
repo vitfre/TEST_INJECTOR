@@ -20,7 +20,7 @@ main.d main.o: .././main.c .././main.h \
  .././menu\i2c_lcd/i2c/i2c.h .././buart\buart_1.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  .././service\buttons.h .././service\init_mcu.h .././interrupt_handler.h \
- .././rs485\rs485_0.h .././adc/adc.h
+ .././rs485\rs485_0.h .././adc/adc.h .././pwm.h
 
 .././main.h:
 
@@ -81,3 +81,5 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-g
 .././rs485\rs485_0.h:
 
 .././adc/adc.h:
+
+.././pwm.h:

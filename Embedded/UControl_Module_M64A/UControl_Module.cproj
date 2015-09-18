@@ -146,6 +146,9 @@
     <Compile Include="outputs.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="pwm.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="rs485\rs485_0.c">
       <SubType>compile</SubType>
     </Compile>

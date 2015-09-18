@@ -21,5 +21,6 @@
 #include "interrupt_handler.h"
 #include "rs485\rs485_0.h"
 #include "adc/adc.h"
+#include "pwm.h"
 //---------------------------------------------------------------------------------------
 #endif /* MAIN_H_ */

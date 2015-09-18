@@ -85,10 +85,39 @@ OCR0=0x00;
 // Compare A Match Interrupt: Off
 // Compare B Match Interrupt: Off
 // Compare C Match Interrupt: Off
+// TCCR1A=0x00;
+// TCCR1B=0x04;
+// TCNT1H=0x0B;
+// TCNT1L=0xDC;
+// ICR1H=0x00;
+// ICR1L=0x00;
+// OCR1AH=0x00;
+// OCR1AL=0x00;
+// OCR1BH=0x00;
+// OCR1BL=0x00;
+// OCR1CH=0x00;
+// OCR1CL=0x00;
+
+
+//---------------------------------------------------------------------------------------
+// Timer/Counter 1 initialization
+// Clock source: System Clock
+// Clock value: Timer1 Stopped
+// Mode: Normal top=0xFFFF
+// OC1A output: Discon.
+// OC1B output: Discon.
+// OC1C output: Discon.
+// Noise Canceler: Off
+// Input Capture on Falling Edge
+// Timer1 Overflow Interrupt: Off
+// Input Capture Interrupt: Off
+// Compare A Match Interrupt: Off
+// Compare B Match Interrupt: Off
+// Compare C Match Interrupt: Off
 TCCR1A=0x00;
-TCCR1B=0x04;
-TCNT1H=0x0B;
-TCNT1L=0xDC;
+TCCR1B=0x00;
+TCNT1H=0x00;
+TCNT1L=0x00;
 ICR1H=0x00;
 ICR1L=0x00;
 OCR1AH=0x00;
@@ -97,6 +126,7 @@ OCR1BH=0x00;
 OCR1BL=0x00;
 OCR1CH=0x00;
 OCR1CL=0x00;
+//---------------------------------------------------------------------------------------
 
 // Timer/Counter 2 initialization
 // Clock source: System Clock

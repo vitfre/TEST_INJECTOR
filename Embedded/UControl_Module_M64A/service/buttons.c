@@ -16,8 +16,8 @@
 ****************************************************************************/
 void BUT_Init(void)
 {
-	DDRX_BUTTON &= ~(MASK_BUTTONS);
-	PORT_BUTTON |= MASK_BUTTONS;
+	DDRX_BUTTON &= ~(MASK_BUTTON);
+	PORT_BUTTON |= MASK_BUTTON;
 };
 /**************************************************************************
 *   Function name : BUT_Debrief

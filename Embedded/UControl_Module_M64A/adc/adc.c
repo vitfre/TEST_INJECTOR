@@ -16,11 +16,13 @@
 ****************************************************************************/
 void init_adc(void)
 {
+	//---------------------------------------------------------------------------------------
 	// ADC initialization
 	// ADC Clock frequency: 500,000 kHz
-	// ADC Voltage Reference: AREF pin
+	// ADC Voltage Reference: AVCC pin
 	ADMUX=ADC_VREF_TYPE & 0xff;
 	ADCSRA=0x85;
+	//---------------------------------------------------------------------------------------
 };
 /**************************************************************************
 *   Function name : read_adc
@@ -30,6 +32,7 @@ void init_adc(void)
 ****************************************************************************/
 unsigned int read_adc(unsigned char adc_input)
 {
+	//---------------------------------------------------------------------------------------
 	unsigned int ADC_RESULT;
 	ADMUX=adc_input | (ADC_VREF_TYPE & 0xff);
 	// Delay needed for the stabilization of the ADC input voltage
@@ -42,6 +45,7 @@ unsigned int read_adc(unsigned char adc_input)
 	ADC_RESULT=ADCL;
 	ADC_RESULT=ADC_RESULT+(ADCH<<8);
 	return ADC_RESULT;
+	//---------------------------------------------------------------------------------------
 };
 /**************************************************************************
 *   Function name : rd_adc
@@ -51,6 +55,7 @@ unsigned int read_adc(unsigned char adc_input)
 ****************************************************************************/
 unsigned int get_average_adc(unsigned char adc_input)
 {
+	//---------------------------------------------------------------------------------------
 	unsigned int temp_adc = 0;
 	//_delay_us(500);
 	temp_adc=read_adc(adc_input);
@@ -62,6 +67,7 @@ unsigned int get_average_adc(unsigned char adc_input)
 	temp_adc=temp_adc + read_adc(adc_input);
 	temp_adc=temp_adc>>2;
 	return temp_adc;
+	//---------------------------------------------------------------------------------------
 };
 //***************************************************************************************
 //***************************************************************************************
