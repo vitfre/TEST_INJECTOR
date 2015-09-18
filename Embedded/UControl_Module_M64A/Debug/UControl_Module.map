@@ -1,12 +1,10 @@
 Archive member included because of file (symbol)
 
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
-                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o (exit)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
-                              menu/i2c_lcd/i2c_lcd.o (__tablejump2__)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o (exit)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
                               buart/buart_1.o (__do_clear_bss)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
                               menu/i2c_lcd/i2c_lcd.o (__umulhisi3)
 
 Allocating common symbols
@@ -29,28 +27,25 @@ uart_0_tx           0x10              main.o
 
 Discarded input sections
 
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
  .text          0x00000000        0x0 adc/adc.o
  .bss           0x00000000        0x0 adc/adc.o
  .text.read_adc
-                0x00000000       0x24 adc/adc.o
+                0x00000000       0x2a adc/adc.o
  .text.get_average_adc
-                0x00000000       0x54 adc/adc.o
+                0x00000000       0x5a adc/adc.o
  .text          0x00000000        0x0 buart/buart_1.o
  .bss           0x00000000        0x0 buart/buart_1.o
  .text.uart_1_rx_count
                 0x00000000        0xe buart/buart_1.o
  .text.uart_1_read
                 0x00000000       0x24 buart/buart_1.o
- .text.uart_1_write
-                0x00000000       0x2a buart/buart_1.o
  .text          0x00000000        0x0 interrupt_handler.o
  .bss           0x00000000        0x0 interrupt_handler.o
  .text          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
  .text.stop_pwm
                 0x00000000       0x26 main.o
- .text.set_pwm  0x00000000       0x22 main.o
  .text          0x00000000        0x0 menu/i2c_lcd/i2c/i2c.o
  .bss           0x00000000        0x0 menu/i2c_lcd/i2c/i2c.o
  .text.i2c_start_wait
@@ -61,7 +56,7 @@ Discarded input sections
  .text.i2c_nack
                 0x00000000       0x18 menu/i2c_lcd/i2c/i2c.o
  .text.i2c_read
-                0x00000000       0x24 menu/i2c_lcd/i2c/i2c.o
+                0x00000000       0x2a menu/i2c_lcd/i2c/i2c.o
  .text.i2c_readAck
                 0x00000000       0x12 menu/i2c_lcd/i2c/i2c.o
  .text.i2c_readNak
@@ -83,17 +78,15 @@ Discarded input sections
  .text.clear_i2c_lcd
                 0x00000000       0x16 menu/i2c_lcd/i2c_lcd.o
  .text.detect_i2c_symbol
-                0x00000000       0x3c menu/i2c_lcd/i2c_lcd.o
- .progmem.gcc_sw_table.detect_i2c_symbol
-                0x00000000       0x12 menu/i2c_lcd/i2c_lcd.o
+                0x00000000       0x52 menu/i2c_lcd/i2c_lcd.o
  .text.detect_i2c_shortt_string
                 0x00000000        0xa menu/i2c_lcd/i2c_lcd.o
  .text.detect_i2c_short_string
                 0x00000000       0x58 menu/i2c_lcd/i2c_lcd.o
  .text.detect_i2c_short_3_string
-                0x00000000       0xb2 menu/i2c_lcd/i2c_lcd.o
+                0x00000000       0xa6 menu/i2c_lcd/i2c_lcd.o
  .text.detect_i2c_string
-                0x00000000       0xc4 menu/i2c_lcd/i2c_lcd.o
+                0x00000000       0xb0 menu/i2c_lcd/i2c_lcd.o
  .text          0x00000000        0x0 menu/menu.o
  .bss           0x00000000        0x0 menu/menu.o
  .text.Main_menu_i2c
@@ -106,74 +99,51 @@ Discarded input sections
                 0x00000000        0xe rs485/rs485_0.o
  .text.rs485_0_read
                 0x00000000       0x24 rs485/rs485_0.o
- .text.rs485_0_write
-                0x00000000       0x24 rs485/rs485_0.o
  .text          0x00000000        0x0 service/buttons.o
  .bss           0x00000000        0x0 service/buttons.o
  .text.BUT_GetKey
                 0x00000000        0xa service/buttons.o
  .text.BUT_SetKey
                 0x00000000        0x6 service/buttons.o
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
- .text.libgcc   0x00000000        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000000       0x18 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.mul
-                0x00000000       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
 
 Memory Configuration
 
@@ -190,7 +160,7 @@ user_signatures  0x00850000         0x00000400         rw !x
 Linker script and memory map
 
 Address of section .data set to 0x800100
-LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
 LOAD adc/adc.o
 LOAD buart/buart_1.o
 LOAD interrupt_handler.o
@@ -201,13 +171,11 @@ LOAD menu/menu.o
 LOAD rs485/rs485_0.o
 LOAD service/buttons.o
 START GROUP
-LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libm.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5\libm.a
 END GROUP
-START GROUP
-LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a
-LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libm.a
-LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a
-END GROUP
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a
 
 .hash
  *(.hash)
@@ -299,21 +267,20 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x6c0
+.text           0x00000000      0x766
  *(.vectors)
- .vectors       0x00000000       0x8c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+ .vectors       0x00000000       0x8c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
  *(.progmem.gcc*)
+ *(.progmem*)
                 0x0000008c                . = ALIGN (0x2)
                 0x0000008c                __trampolines_start = .
  *(.trampolines)
  .trampolines   0x0000008c        0x0 linker stubs
  *(.trampolines*)
                 0x0000008c                __trampolines_end = .
- *(.progmem*)
-                0x0000008c                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
@@ -327,18 +294,18 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000008c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+ .init0         0x0000008c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
                 0x0000008c                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000008c        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+ .init2         0x0000008c        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000098       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+ .init4         0x00000098       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
                 0x00000098                __do_clear_bss
  *(.init4)
  *(.init5)
@@ -350,14 +317,13 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000000a8        0x8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+ .init9         0x000000a8        0x8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
  *(.init9)
  *(.text)
- .text          0x000000b0        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+ .text          0x000000b0        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
                 0x000000b0                __vector_22
                 0x000000b0                __vector_28
                 0x000000b0                __vector_1
-                0x000000b0                __vector_32
                 0x000000b0                __vector_34
                 0x000000b0                __vector_24
                 0x000000b0                __vector_12
@@ -391,76 +357,87 @@ END GROUP
  .text.__vector_31
                 0x00000108       0x52 buart/buart_1.o
                 0x00000108                __vector_31
+ .text.__vector_32
+                0x0000015a       0x14 buart/buart_1.o
+                0x0000015a                __vector_32
+ .text.uart_1_write
+                0x0000016e       0x2a buart/buart_1.o
+                0x0000016e                uart_1_write
  .text.uart_1_init
-                0x0000015a       0x12 buart/buart_1.o
-                0x0000015a                uart_1_init
+                0x00000198       0x12 buart/buart_1.o
+                0x00000198                uart_1_init
  .text.__vector_16
-                0x0000016c       0x48 interrupt_handler.o
-                0x0000016c                __vector_16
+                0x000001aa       0x48 interrupt_handler.o
+                0x000001aa                __vector_16
  .text.__vector_14
-                0x000001b4       0x14 interrupt_handler.o
-                0x000001b4                __vector_14
+                0x000001f2       0x14 interrupt_handler.o
+                0x000001f2                __vector_14
  .text.__vector_10
-                0x000001c8       0x14 interrupt_handler.o
-                0x000001c8                __vector_10
+                0x00000206       0x14 interrupt_handler.o
+                0x00000206                __vector_10
  .text.__vector_29
-                0x000001dc       0x14 interrupt_handler.o
-                0x000001dc                __vector_29
+                0x0000021a       0x14 interrupt_handler.o
+                0x0000021a                __vector_29
  .text.init_mcu
-                0x000001f0       0xb8 main.o
-                0x000001f0                init_mcu
+                0x0000022e       0xb8 main.o
+                0x0000022e                init_mcu
  .text.init_pwm
-                0x000002a8       0x2a main.o
-                0x000002a8                init_pwm
- .text.main     0x000002d2       0x94 main.o
-                0x000002d2                main
+                0x000002e6       0x2a main.o
+                0x000002e6                init_pwm
+ .text.set_pwm  0x00000310       0x22 main.o
+                0x00000310                set_pwm
+ .text.main     0x00000332       0xd6 main.o
+                0x00000332                main
  .text.i2c_init
-                0x00000366       0x12 menu/i2c_lcd/i2c/i2c.o
-                0x00000366                i2c_init
+                0x00000408       0x12 menu/i2c_lcd/i2c/i2c.o
+                0x00000408                i2c_init
  .text.i2c_start
-                0x00000378       0x16 menu/i2c_lcd/i2c/i2c.o
-                0x00000378                i2c_start
+                0x0000041a       0x16 menu/i2c_lcd/i2c/i2c.o
+                0x0000041a                i2c_start
  .text.i2c_write
-                0x0000038e       0x52 menu/i2c_lcd/i2c/i2c.o
-                0x0000038e                i2c_write
+                0x00000430       0x52 menu/i2c_lcd/i2c/i2c.o
+                0x00000430                i2c_write
  .text.i2c_stop
-                0x000003e0       0x20 menu/i2c_lcd/i2c/i2c.o
-                0x000003e0                i2c_stop
+                0x00000482       0x20 menu/i2c_lcd/i2c/i2c.o
+                0x00000482                i2c_stop
  .text.i2c_acknowledge
-                0x00000400       0x10 menu/i2c_lcd/i2c/i2c.o
-                0x00000400                i2c_acknowledge
+                0x000004a2       0x10 menu/i2c_lcd/i2c/i2c.o
+                0x000004a2                i2c_acknowledge
  .text.PCF8574_Write
-                0x00000410       0x24 menu/i2c_lcd/i2c_lcd.o
-                0x00000410                PCF8574_Write
+                0x000004b2       0x24 menu/i2c_lcd/i2c_lcd.o
+                0x000004b2                PCF8574_Write
  .text.send_i2c_lcd_byte
-                0x00000434       0xca menu/i2c_lcd/i2c_lcd.o
-                0x00000434                send_i2c_lcd_byte
+                0x000004d6       0xb6 menu/i2c_lcd/i2c_lcd.o
+                0x000004d6                send_i2c_lcd_byte
  .text.i2c_lcd_init
-                0x000004fe       0x92 menu/i2c_lcd/i2c_lcd.o
-                0x000004fe                i2c_lcd_init
+                0x0000058c       0x92 menu/i2c_lcd/i2c_lcd.o
+                0x0000058c                i2c_lcd_init
  .text.__vector_18
-                0x00000590       0x48 rs485/rs485_0.o
-                0x00000590                __vector_18
+                0x0000061e       0x48 rs485/rs485_0.o
+                0x0000061e                __vector_18
  .text.__vector_19
-                0x000005d8       0x56 rs485/rs485_0.o
-                0x000005d8                __vector_19
+                0x00000666       0x48 rs485/rs485_0.o
+                0x00000666                __vector_19
  .text.__vector_20
-                0x0000062e       0x14 rs485/rs485_0.o
-                0x0000062e                __vector_20
+                0x000006ae       0x16 rs485/rs485_0.o
+                0x000006ae                __vector_20
+ .text.rs485_0_write
+                0x000006c4       0x24 rs485/rs485_0.o
+                0x000006c4                rs485_0_write
  .text.rs485_0_init
-                0x00000642       0x12 rs485/rs485_0.o
-                0x00000642                rs485_0_init
+                0x000006e8       0x12 rs485/rs485_0.o
+                0x000006e8                rs485_0_init
  .text.BUT_Init
-                0x00000654        0xe service/buttons.o
-                0x00000654                BUT_Init
+                0x000006fa        0xe service/buttons.o
+                0x000006fa                BUT_Init
  .text.BUT_Debrief
-                0x00000662       0x5a service/buttons.o
-                0x00000662                BUT_Debrief
-                0x000006bc                . = ALIGN (0x2)
+                0x00000708       0x5a service/buttons.o
+                0x00000708                BUT_Debrief
+                0x00000762                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000006bc        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
-                0x000006bc                _exit
-                0x000006bc                exit
+ .fini9         0x00000762        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+                0x00000762                _exit
+                0x00000762                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -479,14 +456,14 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000006bc        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000762        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000006c0                _etext = .
+                0x00000766                _etext = .
 
-.data           0x00800100        0x0 load address 0x000006c0
+.data           0x00800100        0x0 load address 0x00000766
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64a.o
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
  .data          0x00800100        0x0 adc/adc.o
  .data          0x00800100        0x0 buart/buart_1.o
  .data          0x00800100        0x0 interrupt_handler.o
@@ -496,10 +473,9 @@ END GROUP
  .data          0x00800100        0x0 menu/menu.o
  .data          0x00800100        0x0 rs485/rs485_0.o
  .data          0x00800100        0x0 service/buttons.o
- .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
- .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_tablejump.o)
- .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
- .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_umulhisi3.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
@@ -531,8 +507,8 @@ END GROUP
                 0x00800139                uart_0_rxrd
                 0x0080013a                uart_0_tx
                 0x0080014a                PROVIDE (__bss_end, .)
-                0x000006c0                __data_load_start = LOADADDR (.data)
-                0x000006c0                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000766                __data_load_start = LOADADDR (.data)
+                0x00000766                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080014a        0x0
                 0x0080014a                PROVIDE (__noinit_start, .)
@@ -560,11 +536,13 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab
+.stab           0x00000000      0x6cc
  *(.stab)
+ .stab          0x00000000      0x6cc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
 
-.stabstr
+.stabstr        0x00000000       0x97
  *(.stabstr)
+ .stabstr       0x00000000       0x97 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm64a.o
 
 .stab.excl
  *(.stab.excl)
@@ -578,21 +556,18 @@ END GROUP
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x00000000       0x30
+.comment        0x00000000       0x2f
  *(.comment)
- .comment       0x00000000       0x30 adc/adc.o
-                                 0x31 (size before relaxing)
- .comment       0x00000000       0x31 buart/buart_1.o
- .comment       0x00000000       0x31 interrupt_handler.o
- .comment       0x00000000       0x31 main.o
- .comment       0x00000000       0x31 menu/i2c_lcd/i2c/i2c.o
- .comment       0x00000000       0x31 menu/i2c_lcd/i2c_lcd.o
- .comment       0x00000000       0x31 menu/menu.o
- .comment       0x00000000       0x31 rs485/rs485_0.o
- .comment       0x00000000       0x31 service/buttons.o
-
-.note.gnu.build-id
- *(.note.gnu.build-id)
+ .comment       0x00000000       0x2f adc/adc.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 buart/buart_1.o
+ .comment       0x00000000       0x30 interrupt_handler.o
+ .comment       0x00000000       0x30 main.o
+ .comment       0x00000000       0x30 menu/i2c_lcd/i2c/i2c.o
+ .comment       0x00000000       0x30 menu/i2c_lcd/i2c_lcd.o
+ .comment       0x00000000       0x30 menu/menu.o
+ .comment       0x00000000       0x30 rs485/rs485_0.o
+ .comment       0x00000000       0x30 service/buttons.o
 
 .debug
  *(.debug)
@@ -606,140 +581,129 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x2a0
+.debug_aranges  0x00000000      0x2a8
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x30 adc/adc.o
  .debug_aranges
-                0x00000030       0x48 buart/buart_1.o
+                0x00000030       0x50 buart/buart_1.o
  .debug_aranges
-                0x00000078       0x38 interrupt_handler.o
+                0x00000080       0x38 interrupt_handler.o
  .debug_aranges
-                0x000000b0       0x40 main.o
+                0x000000b8       0x40 main.o
  .debug_aranges
-                0x000000f0       0x78 menu/i2c_lcd/i2c/i2c.o
+                0x000000f8       0x78 menu/i2c_lcd/i2c/i2c.o
  .debug_aranges
-                0x00000168       0x90 menu/i2c_lcd/i2c_lcd.o
+                0x00000170       0x90 menu/i2c_lcd/i2c_lcd.o
  .debug_aranges
-                0x000001f8       0x20 menu/menu.o
+                0x00000200       0x20 menu/menu.o
  .debug_aranges
-                0x00000218       0x50 rs485/rs485_0.o
+                0x00000220       0x50 rs485/rs485_0.o
  .debug_aranges
-                0x00000268       0x38 service/buttons.o
+                0x00000270       0x38 service/buttons.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x22e2
- *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x26d adc/adc.o
- .debug_info    0x0000026d      0x1f0 buart/buart_1.o
- .debug_info    0x0000045d       0xfb interrupt_handler.o
- .debug_info    0x00000558      0x3e9 main.o
- .debug_info    0x00000941      0x724 menu/i2c_lcd/i2c/i2c.o
- .debug_info    0x00001065      0xd65 menu/i2c_lcd/i2c_lcd.o
- .debug_info    0x00001dca      0x16a menu/menu.o
- .debug_info    0x00001f34      0x284 rs485/rs485_0.o
- .debug_info    0x000021b8      0x12a service/buttons.o
+.debug_info     0x00000000     0x2426
+ *(.debug_info)
+ .debug_info    0x00000000      0x292 adc/adc.o
+ .debug_info    0x00000292      0x206 buart/buart_1.o
+ .debug_info    0x00000498       0xfb interrupt_handler.o
+ .debug_info    0x00000593      0x47c main.o
+ .debug_info    0x00000a0f      0x79e menu/i2c_lcd/i2c/i2c.o
+ .debug_info    0x000011ad      0xde1 menu/i2c_lcd/i2c_lcd.o
+ .debug_info    0x00001f8e      0x16a menu/menu.o
+ .debug_info    0x000020f8      0x204 rs485/rs485_0.o
+ .debug_info    0x000022fc      0x12a service/buttons.o
+ *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000      0xbe2
+.debug_abbrev   0x00000000      0xbd4
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x152 adc/adc.o
- .debug_abbrev  0x00000152      0x114 buart/buart_1.o
- .debug_abbrev  0x00000266       0x92 interrupt_handler.o
- .debug_abbrev  0x000002f8      0x1ae main.o
- .debug_abbrev  0x000004a6      0x19d menu/i2c_lcd/i2c/i2c.o
- .debug_abbrev  0x00000643      0x26a menu/i2c_lcd/i2c_lcd.o
- .debug_abbrev  0x000008ad       0xd7 menu/menu.o
- .debug_abbrev  0x00000984      0x192 rs485/rs485_0.o
- .debug_abbrev  0x00000b16       0xcc service/buttons.o
+ .debug_abbrev  0x00000000      0x160 adc/adc.o
+ .debug_abbrev  0x00000160      0x12c buart/buart_1.o
+ .debug_abbrev  0x0000028c       0x92 interrupt_handler.o
+ .debug_abbrev  0x0000031e      0x1d8 main.o
+ .debug_abbrev  0x000004f6      0x1ab menu/i2c_lcd/i2c/i2c.o
+ .debug_abbrev  0x000006a1      0x264 menu/i2c_lcd/i2c_lcd.o
+ .debug_abbrev  0x00000905       0xd7 menu/menu.o
+ .debug_abbrev  0x000009dc      0x12c rs485/rs485_0.o
+ .debug_abbrev  0x00000b08       0xcc service/buttons.o
 
-.debug_line     0x00000000      0xf22
- *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x17b adc/adc.o
- .debug_line    0x0000017b      0x127 buart/buart_1.o
- .debug_line    0x000002a2       0x90 interrupt_handler.o
- .debug_line    0x00000332      0x2a4 main.o
- .debug_line    0x000005d6      0x2eb menu/i2c_lcd/i2c/i2c.o
- .debug_line    0x000008c1      0x33c menu/i2c_lcd/i2c_lcd.o
- .debug_line    0x00000bfd       0x5d menu/menu.o
- .debug_line    0x00000c5a      0x1bb rs485/rs485_0.o
- .debug_line    0x00000e15      0x10d service/buttons.o
+.debug_line     0x00000000     0x105f
+ *(.debug_line)
+ .debug_line    0x00000000      0x1ca adc/adc.o
+ .debug_line    0x000001ca      0x15f buart/buart_1.o
+ .debug_line    0x00000329       0x90 interrupt_handler.o
+ .debug_line    0x000003b9      0x2f4 main.o
+ .debug_line    0x000006ad      0x33a menu/i2c_lcd/i2c/i2c.o
+ .debug_line    0x000009e7      0x384 menu/i2c_lcd/i2c_lcd.o
+ .debug_line    0x00000d6b       0x5d menu/menu.o
+ .debug_line    0x00000dc8      0x163 rs485/rs485_0.o
+ .debug_line    0x00000f2b      0x134 service/buttons.o
 
-.debug_frame    0x00000000      0x678
+.debug_frame    0x00000000      0x68c
  *(.debug_frame)
  .debug_frame   0x00000000       0x54 adc/adc.o
- .debug_frame   0x00000054       0xb8 buart/buart_1.o
- .debug_frame   0x0000010c       0xc0 interrupt_handler.o
- .debug_frame   0x000001cc       0x64 main.o
- .debug_frame   0x00000230       0xec menu/i2c_lcd/i2c/i2c.o
- .debug_frame   0x0000031c      0x204 menu/i2c_lcd/i2c_lcd.o
- .debug_frame   0x00000520       0x30 menu/menu.o
- .debug_frame   0x00000550       0xd4 rs485/rs485_0.o
- .debug_frame   0x00000624       0x54 service/buttons.o
+ .debug_frame   0x00000054       0xd4 buart/buart_1.o
+ .debug_frame   0x00000128       0xc0 interrupt_handler.o
+ .debug_frame   0x000001e8       0x64 main.o
+ .debug_frame   0x0000024c       0xec menu/i2c_lcd/i2c/i2c.o
+ .debug_frame   0x00000338      0x1fc menu/i2c_lcd/i2c_lcd.o
+ .debug_frame   0x00000534       0x30 menu/menu.o
+ .debug_frame   0x00000564       0xd4 rs485/rs485_0.o
+ .debug_frame   0x00000638       0x54 service/buttons.o
 
-.debug_str      0x00000000      0x682
+.debug_str      0x00000000      0x611
  *(.debug_str)
- .debug_str     0x00000000      0x1b4 adc/adc.o
-                                0x1e8 (size before relaxing)
- .debug_str     0x000001b4       0xad buart/buart_1.o
-                                0x202 (size before relaxing)
- .debug_str     0x00000261       0x65 interrupt_handler.o
-                                0x1ad (size before relaxing)
- .debug_str     0x000002c6       0xba main.o
-                                0x2b8 (size before relaxing)
- .debug_str     0x00000380       0xa5 menu/i2c_lcd/i2c/i2c.o
-                                0x240 (size before relaxing)
- .debug_str     0x00000425      0x1a8 menu/i2c_lcd/i2c_lcd.o
-                                0x3c1 (size before relaxing)
- .debug_str     0x000005cd       0x27 menu/menu.o
-                                0x1bf (size before relaxing)
- .debug_str     0x000005f4       0x63 rs485/rs485_0.o
-                                0x25d (size before relaxing)
- .debug_str     0x00000657       0x2b service/buttons.o
-                                0x1a0 (size before relaxing)
+ .debug_str     0x00000000      0x137 adc/adc.o
+                                0x16b (size before relaxing)
+ .debug_str     0x00000137       0xb9 buart/buart_1.o
+                                0x189 (size before relaxing)
+ .debug_str     0x000001f0       0x65 interrupt_handler.o
+                                0x128 (size before relaxing)
+ .debug_str     0x00000255       0xc8 main.o
+                                0x265 (size before relaxing)
+ .debug_str     0x0000031d       0xa5 menu/i2c_lcd/i2c/i2c.o
+                                0x1c3 (size before relaxing)
+ .debug_str     0x000003c2      0x1a8 menu/i2c_lcd/i2c_lcd.o
+                                0x344 (size before relaxing)
+ .debug_str     0x0000056a       0x27 menu/menu.o
+                                0x13a (size before relaxing)
+ .debug_str     0x00000591       0x55 rs485/rs485_0.o
+                                0x18d (size before relaxing)
+ .debug_str     0x000005e6       0x2b service/buttons.o
+                                0x11b (size before relaxing)
 
-.debug_loc      0x00000000     0x13ad
+.debug_loc      0x00000000     0x128b
  *(.debug_loc)
  .debug_loc     0x00000000      0x10c adc/adc.o
- .debug_loc     0x0000010c      0x194 buart/buart_1.o
- .debug_loc     0x000002a0      0x158 interrupt_handler.o
- .debug_loc     0x000003f8       0x40 main.o
- .debug_loc     0x00000438      0x1be menu/i2c_lcd/i2c/i2c.o
- .debug_loc     0x000005f6      0xb40 menu/i2c_lcd/i2c_lcd.o
- .debug_loc     0x00001136       0x65 menu/menu.o
- .debug_loc     0x0000119b      0x1e8 rs485/rs485_0.o
- .debug_loc     0x00001383       0x2a service/buttons.o
+ .debug_loc     0x0000010c      0x1db buart/buart_1.o
+ .debug_loc     0x000002e7      0x158 interrupt_handler.o
+ .debug_loc     0x0000043f       0x98 main.o
+ .debug_loc     0x000004d7      0x164 menu/i2c_lcd/i2c/i2c.o
+ .debug_loc     0x0000063b      0xa07 menu/i2c_lcd/i2c_lcd.o
+ .debug_loc     0x00001042       0x65 menu/menu.o
+ .debug_loc     0x000010a7      0x1ba rs485/rs485_0.o
+ .debug_loc     0x00001261       0x2a service/buttons.o
 
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_weaknames
- *(.debug_weaknames)
-
-.debug_funcnames
- *(.debug_funcnames)
-
-.debug_typenames
- *(.debug_typenames)
-
-.debug_varnames
- *(.debug_varnames)
-
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x2a0
+.debug_ranges   0x00000000      0x230
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x20 adc/adc.o
- .debug_ranges  0x00000020       0x38 buart/buart_1.o
- .debug_ranges  0x00000058       0x28 interrupt_handler.o
- .debug_ranges  0x00000080       0xa8 main.o
- .debug_ranges  0x00000128       0x68 menu/i2c_lcd/i2c/i2c.o
- .debug_ranges  0x00000190       0x98 menu/i2c_lcd/i2c_lcd.o
- .debug_ranges  0x00000228       0x10 menu/menu.o
- .debug_ranges  0x00000238       0x40 rs485/rs485_0.o
- .debug_ranges  0x00000278       0x28 service/buttons.o
+ .debug_ranges  0x00000020       0x40 buart/buart_1.o
+ .debug_ranges  0x00000060       0x28 interrupt_handler.o
+ .debug_ranges  0x00000088       0x30 main.o
+ .debug_ranges  0x000000b8       0x68 menu/i2c_lcd/i2c/i2c.o
+ .debug_ranges  0x00000120       0x98 menu/i2c_lcd/i2c_lcd.o
+ .debug_ranges  0x000001b8       0x10 menu/menu.o
+ .debug_ranges  0x000001c8       0x40 rs485/rs485_0.o
+ .debug_ranges  0x00000208       0x28 service/buttons.o
 
 .debug_macro
  *(.debug_macro)
