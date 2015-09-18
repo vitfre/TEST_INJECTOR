@@ -63,9 +63,9 @@ int main(void)
 // 		cnt=read_adc(A_IN_3);
 //  		uart_1_write (cnt);
  		_delay_ms(10);
-		 set_pwm(pwm_1, cnt);
-		 set_pwm(pwm_2, cnt);
-		 set_pwm(pwm_3, cnt);
+		 set_pwm(pwm_1, 800);
+		 set_pwm(pwm_2, 25);
+		 set_pwm(pwm_3, 540);
  		cnt++;
 		 if (cnt>1023)
 		 {
